@@ -1,11 +1,36 @@
 import { storyData } from '../content/story.js';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { 
+  createIcons, 
+  Heart, 
+  MessageCircleHeart, 
+  Rose, 
+  Bird, 
+  Handshake, 
+  Sparkles, 
+  Eye, 
+  PhoneCall, 
+  Smartphone, 
+  Moon, 
+  Clock, 
+  Music, 
+  Laugh, 
+  ShoppingBag, 
+  Flame, 
+  Droplets, 
+  CircleHelp, 
+  BookOpen, 
+  Gift, 
+  Baby, 
+  Infinity 
+} from 'lucide';
 
 // Register GSAP Plugin
 gsap.registerPlugin(ScrollTrigger);
 
 function startApp() {
+  initPreloader();
   initCountdown();
   initHeroSlideshow();
   renderTimeline();
@@ -23,6 +48,42 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', startApp);
 } else {
   startApp();
+}
+
+/**
+ * 0. Romantic Love Preloader Sequence
+ */
+function initPreloader() {
+  const preloader = document.getElementById('love-preloader');
+  const bar = document.getElementById('preloader-bar');
+  if (!preloader) return;
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced) {
+    preloader.remove();
+    return;
+  }
+
+  // Animate shimmer bar
+  if (bar) {
+    setTimeout(() => {
+      bar.style.width = '100%';
+    }, 100);
+  }
+
+  // Dismiss gracefully with smooth fade-out
+  const dismiss = () => {
+    preloader.classList.add('opacity-0', 'pointer-events-none', '-translate-y-4');
+    setTimeout(() => {
+      if (preloader.parentNode) preloader.remove();
+    }, 700);
+  };
+
+  // Tap/click to bypass
+  preloader.addEventListener('click', dismiss);
+
+  // Auto-dismiss after 1.2s
+  setTimeout(dismiss, 1200);
 }
 
 /**
@@ -257,13 +318,16 @@ function renderQuizCards() {
   grid.innerHTML = storyData.funQuestions.map((item, index) => {
     let category = 'both';
     let badgeColor = 'bg-lilac/30 text-plum';
+    let iconBg = 'bg-lilac/30 text-plum group-hover:bg-plum group-hover:text-ivory';
 
     if (item.answer.includes('Gideon')) {
       category = 'gideon';
       badgeColor = 'bg-marigold/20 text-marigold-dark';
+      iconBg = 'bg-marigold/20 text-marigold-dark group-hover:bg-marigold group-hover:text-plum';
     } else if (item.answer.includes('Grace-Mercy')) {
       category = 'gracemercy';
       badgeColor = 'bg-coral/15 text-coral';
+      iconBg = 'bg-coral/15 text-coral group-hover:bg-coral group-hover:text-white';
     }
 
     return `
@@ -278,7 +342,9 @@ function renderQuizCards() {
       >
         <div class="space-y-3">
           <div class="flex items-center justify-between">
-            <span class="text-2xl" aria-hidden="true">${item.icon}</span>
+            <div class="w-10 h-10 rounded-xl ${iconBg} flex items-center justify-center transition-all duration-300 shadow-xs" aria-hidden="true">
+              <i data-lucide="${item.iconName || 'heart'}" class="w-5 h-5"></i>
+            </div>
             <span class="text-[10px] uppercase font-mono font-bold tracking-wider text-plum/50">Q${index + 1}</span>
           </div>
           <h3 class="font-headline text-base sm:text-lg text-plum group-hover:text-coral transition-colors font-semibold">
@@ -298,6 +364,33 @@ function renderQuizCards() {
       </div>
     `;
   }).join('');
+
+  // Hydrate Lucide SVG icons
+  createIcons({
+    icons: {
+      Heart,
+      MessageCircleHeart,
+      Rose,
+      Bird,
+      Handshake,
+      Sparkles,
+      Eye,
+      PhoneCall,
+      Smartphone,
+      Moon,
+      Clock,
+      Music,
+      Laugh,
+      ShoppingBag,
+      Flame,
+      Droplets,
+      CircleHelp,
+      BookOpen,
+      Gift,
+      Baby,
+      Infinity
+    }
+  });
 
   // Add click & keyboard handler for flip reveal
   document.querySelectorAll('.quiz-card').forEach(card => {

@@ -4,7 +4,7 @@
 - [x] **Names & Attributes:** Exact names verified (`Grace-Mercy Adegbe`, `Gideon Oluwatobiloba Ofuegbe`).
 - [x] **Unedited Personal Letters:** Both letters ("To My Bride, Grace Mercy" and "Open Letter from Grace-Mercy to Gideon") included with 100% text fidelity, paragraph structure, and closing scriptures (Colossians 3:14 and Isaiah 55:5).
 - [x] **The Timeline Milestones:** All 6 milestones (2023 church sighting, 2024 "Your beauty is killing" photo & WhatsApp sticker, Jan 2025 kidnapper call, 2-week prayer confirmation, The YES, and PURELOVE'26 covenant) fully represented.
-- [x] **The PURELOVE Q&A:** All 21 couple quiz questions included and rendered interactively.
+- [x] **The PURELOVE Q&A:** All 21 couple quiz questions included and rendered interactively with elegant, themed Lucide icon badges (replacing generic OS emojis).
 - [x] **Faith Foundation & Marriage Vision:** Ecclesiastes 4:12 threefold cord, 1 Peter 3:1,7, 2 Corinthians 13, and Gideon's complete words on marriage integrity ("us against the problem, not you against me").
 - [x] **Gifting Information:** Exact account numbers and banks matched to source document (First Bank: 3183960244, Premium Trust Bank: 0112279200). No fake donation claims, tax exemptions, or third-party card processors.
 
