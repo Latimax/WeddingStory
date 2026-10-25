@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 130" width="100%" height="100%" aria-label="Grace-Mercy and Gideon Monogram">
+  <defs>
+    <!-- Rich Gold Gradients -->
+    <linearGradient id="goldLeafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE89D" />
+      <stop offset="35%" stop-color="#E2B144" />
+      <stop offset="70%" stop-color="#BA8520" />
+      <stop offset="100%" stop-color="#8F5E0F" />
+    </linearGradient>
+    <linearGradient id="goldLeafGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0BA" />
+      <stop offset="40%" stop-color="#DFAD39" />
+      <stop offset="75%" stop-color="#A97517" />
+      <stop offset="100%" stop-color="#7D4E08" />
+    </linearGradient>
+    <linearGradient id="goldStemGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4A234" />
+      <stop offset="50%" stop-color="#F2CB6C" />
+      <stop offset="100%" stop-color="#8E5F12" />
+    </linearGradient>
+    <linearGradient id="wineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8A1426" />
+      <stop offset="100%" stop-color="#600D1B" />
+    </linearGradient>
+    <filter id="subtleDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="0.8" flood-color="#401018" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Central Monogram G | G -->
+  <g id="letters" filter="url(#subtleDrop)">
+    <!-- Left G -->
+    <text x="68" y="66" 
+          font-family="'Fraunces', 'Cinzel', 'Playfair Display', 'Times New Roman', serif" 
+          font-size="46" 
+          font-weight="700" 
+          fill="url(#wineGrad)" 
+          text-anchor="middle"
+          letter-spacing="-0.02em">G</text>
+
+    <!-- Dividing Line -->
+    <line x1="110" y1="20" x2="110" y2="84" 
+          stroke="url(#wineGrad)" 
+          stroke-width="2.4" 
+          stroke-linecap="round" />
+
+    <!-- Right G -->
+    <text x="152" y="66" 
+          font-family="'Fraunces', 'Cinzel', 'Playfair Display', 'Times New Roman', serif" 
+          font-size="46" 
+          font-weight="700" 
+          fill="url(#wineGrad)" 
+          text-anchor="middle"
+          letter-spacing="-0.02em">G</text>
+  </g>
+
+  <!-- Golden Laurel Wreath (Left & Right Branches) -->
+  <g id="wreath" filter="url(#subtleDrop)">
+    
+    <!-- Left Stem Arc -->
+    <path d="M 103,105 C 80,105 44,94 34,68 C 29,54 32,38 38,30" 
+          fill="none" 
+          stroke="url(#goldStemGrad)" 
+          stroke-width="2" 
+          stroke-linecap="round" />
+
+    <!-- Right Stem Arc -->
+    <path d="M 117,105 C 140,105 176,94 186,68 C 191,54 188,38 182,30" 
+          fill="none" 
+          stroke="url(#goldStemGrad)" 
+          stroke-width="2" 
+          stroke-linecap="round" />
+
+    <!-- Left Leaves -->
+    <!-- Bottom cluster near center -->
+    <path d="M 98,105 C 92,109 84,107 80,105 C 83,101 92,99 98,105 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 92,102 C 86,108 77,108 72,104 C 77,99 86,97 92,102 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 85,102 C 80,108 69,106 63,100 C 70,96 79,96 85,102 Z" fill="url(#goldLeafGrad)" />
+    
+    <!-- Lower-mid left leaves -->
+    <path d="M 75,98 C 65,104 54,99 49,91 C 57,88 68,91 75,98 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 68,90 C 58,95 48,89 44,80 C 52,78 62,82 68,90 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 58,82 C 48,87 40,79 38,69 C 46,68 54,74 58,82 Z" fill="url(#goldLeafGrad2)" />
+
+    <!-- Mid-upper left leaves -->
+    <path d="M 48,72 C 38,76 32,67 32,56 C 40,56 46,63 48,72 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 43,62 C 34,64 29,54 31,44 C 38,46 42,53 43,62 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 39,52 C 32,52 28,42 32,33 C 38,36 40,44 39,52 Z" fill="url(#goldLeafGrad)" />
+
+    <!-- Top tip left leaves -->
+    <path d="M 37,42 C 32,40 30,31 36,24 C 40,29 40,36 37,42 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 38,30 C 37,23 42,17 48,16 C 48,22 44,28 38,30 Z" fill="url(#goldLeafGrad)" />
+
+    <!-- Inner left accent leaves -->
+    <path d="M 88,96 C 85,90 88,83 94,80 C 95,87 92,93 88,96 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 77,88 C 73,81 77,73 84,70 C 84,78 81,84 77,88 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 65,77 C 60,70 65,62 72,59 C 72,67 69,73 65,77 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 54,65 C 50,57 55,49 63,47 C 62,55 58,61 54,65 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 46,51 C 44,43 50,36 57,35 C 55,43 51,48 46,51 Z" fill="url(#goldLeafGrad2)" />
+
+    <!-- Right Leaves -->
+    <!-- Bottom cluster near center -->
+    <path d="M 122,105 C 128,109 136,107 140,105 C 137,101 128,99 122,105 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 128,102 C 134,108 143,108 148,104 C 143,99 134,97 128,102 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 135,102 C 140,108 151,106 157,100 C 150,96 141,96 135,102 Z" fill="url(#goldLeafGrad2)" />
+
+    <!-- Lower-mid right leaves -->
+    <path d="M 145,98 C 155,104 166,99 171,91 C 163,88 152,91 145,98 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 152,90 C 162,95 172,89 176,80 C 168,78 158,82 152,90 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 162,82 C 172,87 180,79 182,69 C 174,68 166,74 162,82 Z" fill="url(#goldLeafGrad)" />
+
+    <!-- Mid-upper right leaves -->
+    <path d="M 172,72 C 182,76 188,67 188,56 C 180,56 174,63 172,72 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 177,62 C 186,64 191,54 189,44 C 182,46 178,53 177,62 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 181,52 C 188,52 192,42 188,33 C 182,36 180,44 181,52 Z" fill="url(#goldLeafGrad2)" />
+
+    <!-- Top tip right leaves -->
+    <path d="M 183,42 C 188,40 190,31 184,24 C 180,29 180,36 183,42 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 182,30 C 183,23 178,17 172,16 C 172,22 176,28 182,30 Z" fill="url(#goldLeafGrad2)" />
+
+    <!-- Inner right accent leaves -->
+    <path d="M 132,96 C 135,90 132,83 126,80 C 125,87 128,93 132,96 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 143,88 C 147,81 143,73 136,70 C 136,78 139,84 143,88 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 155,77 C 160,70 155,62 148,59 C 148,67 151,73 155,77 Z" fill="url(#goldLeafGrad)" />
+    <path d="M 166,65 C 170,57 165,49 157,47 C 158,55 162,61 166,65 Z" fill="url(#goldLeafGrad2)" />
+    <path d="M 174,51 C 176,43 170,36 163,35 C 165,43 169,48 174,51 Z" fill="url(#goldLeafGrad)" />
+
+    <!-- Base Center Tie Ribbon Knot -->
+    <circle cx="110" cy="105" r="3.2" fill="url(#goldLeafGrad)" />
+    <path d="M 107,106 Q 102,114 96,116" stroke="url(#goldStemGrad)" stroke-width="1.8" fill="none" stroke-linecap="round" />
+    <path d="M 113,106 Q 118,114 124,116" stroke="url(#goldStemGrad)" stroke-width="1.8" fill="none" stroke-linecap="round" />
+  </g>
+</svg>

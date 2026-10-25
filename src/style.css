@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,200..900;1,9..144,200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-ivory: #FFF9F2;
+  --color-plum: #43233C;
+  --color-plum-dark: #2B1426;
+  --color-coral: #F47C78;
+  --color-marigold: #F4BA58;
+  --color-sage: #A1B99B;
+  --color-lilac: #C9B6D8;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'DM Sans', sans-serif;
+  color: #43233C;
+  background-color: #FFF9F2;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for editorial feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF9F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9B6D8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A690B8;
+}
+
+/* Botanical paper subtle pattern & grain */
+.bg-editorial-grain {
+  background-color: #FFF9F2;
+  background-image: radial-gradient(rgba(67, 35, 60, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Subtle organic paper card */
+.paper-card {
+  background: #FFFDF9;
+  border: 1px solid rgba(67, 35, 60, 0.08);
+  box-shadow: 0 10px 30px -10px rgba(67, 35, 60, 0.06), 0 4px 6px -2px rgba(67, 35, 60, 0.02);
+}
+
+.paper-card-highlight {
+  background: #FFFDF9;
+  border: 1px solid rgba(244, 124, 120, 0.25);
+  box-shadow: 0 15px 35px -10px rgba(67, 35, 60, 0.09);
+}
+
+/* Pull quote flourish */
+.quote-mark {
+  font-family: 'Fraunces', serif;
+  font-size: 5rem;
+  line-height: 1;
+  color: rgba(244, 124, 120, 0.25);
+}
+
+/* Accessible focus ring */
+button:focus-visible, a:focus-visible, input:focus-visible {
+  outline: 2px solid #F47C78;
+  outline-offset: 3px;
+}
+
+/* Card flip for quiz */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
