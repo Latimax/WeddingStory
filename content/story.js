@@ -225,7 +225,7 @@ export const storyData = {
   gallery: [
     {
       id: "img-prayer",
-      src: "/images/photo-prayer-unity.jpeg",
+      src: "./images/photo-prayer-unity.jpeg",
       alt: "Grace-Mercy in rich red gele and lace, and Gideon in burgundy agbada, with heads bowed together in reverence during prayer",
       caption: "A Sacred Moment: Seeking God's face together in reverence and unity.",
       category: "Faith & Ceremony",
@@ -234,7 +234,7 @@ export const storyData = {
     },
     {
       id: "img-hands",
-      src: "/images/photo-clasped-hands.jpeg",
+      src: "./images/photo-clasped-hands.jpeg",
       alt: "Close-up of Grace-Mercy and Gideon's hands clasped together, with Grace-Mercy wearing a black and gold jeweled bracelet",
       caption: "Two Lives, Clasping Hands: Bound by the golden chord of love.",
       category: "Intimate Milestones",
@@ -243,7 +243,7 @@ export const storyData = {
     },
     {
       id: "img-splendor",
-      src: "/images/photo-traditional-splendor.jpeg",
+      src: "./images/photo-traditional-splendor.jpeg",
       alt: "Grace-Mercy and Gideon standing side-by-side in matching traditional burgundy attire sharing a bright warm expression",
       caption: "Celebration & Joy: Radiant in our traditional burgundy and white.",
       category: "Celebration",
@@ -252,7 +252,7 @@ export const storyData = {
     },
     {
       id: "img-word",
-      src: "/images/photo-bible-study.jpeg",
+      src: "./images/photo-bible-study.jpeg",
       alt: "Gideon and Grace-Mercy smiling warmly at a desk with study Bibles and notes titled Purity and Holiness",
       caption: "Studying the Word: Building our foundation in truth and purity.",
       category: "Faith & Fellowship",
@@ -261,7 +261,7 @@ export const storyData = {
     },
     {
       id: "img-purity-couch",
-      src: "/images/photo-purity-series.jpeg",
+      src: "./images/photo-purity-series.jpeg",
       alt: "Grace-Mercy in pink patterned attire on a sofa with phone in hand, Gideon leaning fondly beside her, with Purity Series screen in background",
       caption: "Ministry & Laughter: Partners in life, purpose, and the Purity Series.",
       category: "Ministry & Life",
@@ -270,7 +270,7 @@ export const storyData = {
     },
     {
       id: "img-lens",
-      src: "/images/photo-through-the-lens.jpeg",
+      src: "./images/photo-through-the-lens.jpeg",
       alt: "A view of the couple captured through a smartphone camera during their celebration",
       caption: "Through Every Lens: Forever grateful for the journey so far.",
       category: "Memories",
